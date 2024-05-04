@@ -1,0 +1,37 @@
+---
+title: "the Average Method"
+output: word_document
+date: "2024-05-04"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import the fma
+
+```{r cars}
+library(fma)
+```
+
+## Display the beer database
+
+
+```{r pressure, echo=FALSE}
+head(beer)
+```
+
+```{r}
+summary(beer)
+
+```
+```{r}
+plot(beer)
+
+```
+
+
+```{r}
+meanf(beer,1)
+meanf(beer,5)
+```
